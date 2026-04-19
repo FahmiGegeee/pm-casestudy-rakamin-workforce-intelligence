@@ -160,7 +160,7 @@ Aplikasi akan berjalan di `http://localhost:3000`
 
 ## 👤 About This Project
 
-**Dikembangkan oleh:** Fahmi Gegee (Product Manager)
+**Dikembangkan oleh:** Muhammad Fahmi Gymnastiar Gozali (Product Manager)
 
 Project ini dikembangkan secara individu sebagai bagian dari **portfolio Product Manager**, mendemonstrasikan kemampuan dalam:
 - Problem analysis & strategy formulation
