@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rakamin WIP — Medika Nusantara</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- MOBILE OVERLAY -->
+<div class="sb-overlay" id="sb-overlay" onclick="closeSidebar()"></div>
+
+<!-- ═══════════════ SIDEBAR ═══════════════ -->
+<aside class="sidebar" id="sidebar">
+  <!-- Logo -->
+  <div class="sb-logo-wrap">
+    <img src="logo.png" alt="Rakamin" class="sb-logo">
+  </div>
+
+  <!-- Nav -->
+  <nav class="sb-nav">
+    <div class="nav-section-label">ANALISIS</div>
+    <a href="#" class="nav-item active" data-page="dashboard" onclick="nav('dashboard',this)">
+      <span class="nav-icon">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M3 4a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1V4zm0 8a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1H4a1 1 0 01-1-1v-4zm8-8a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1V4zm0 8a1 1 0 011-1h4a1 1 0 011 1v4a1 1 0 01-1 1h-4a1 1 0 01-1-1v-4z"/></svg>
+      </span>
+      <span class="nav-label">Dashboard</span>
+    </a>
+    <a href="#" class="nav-item" data-page="team" onclick="nav('team',this)">
+      <span class="nav-icon">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M9 6a3 3 0 11-6 0 3 3 0 016 0zM17 6a3 3 0 11-6 0 3 3 0 016 0zM12.93 17c.046-.327.07-.66.07-1a6.97 6.97 0 00-1.5-4.33A5 5 0 0119 16v1h-6.07zM6 11a5 5 0 015 5v1H1v-1a5 5 0 015-5z"/></svg>
+      </span>
+      <span class="nav-label">Daftar Karyawan</span>
+    </a>
+    <a href="#" class="nav-item" data-page="review" onclick="nav('review',this)">
+      <span class="nav-icon">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd"/></svg>
+      </span>
+      <span class="nav-label">Antrian Review</span>
+      <span class="nav-badge" id="review-badge">78</span>
+    </a>
+
+    <div class="nav-section-label">PERBANDINGAN</div>
+    <a href="#" class="nav-item" data-page="compare" onclick="nav('compare',this)">
+      <span class="nav-icon">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M5 3a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2V5a2 2 0 00-2-2H5zM5 11a2 2 0 00-2 2v2a2 2 0 002 2h2a2 2 0 002-2v-2a2 2 0 00-2-2H5zM11 5a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V5zM14 11a1 1 0 011 1v1h1a1 1 0 110 2h-1v1a1 1 0 11-2 0v-1h-1a1 1 0 110-2h1v-1a1 1 0 011-1z"/></svg>
+      </span>
+      <span class="nav-label">Messy vs Clean</span>
+    </a>
+
+    <div class="nav-section-label">PENGATURAN</div>
+    <a href="#" class="nav-item" onclick="return false">
+      <span class="nav-icon">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/></svg>
+      </span>
+      <span class="nav-label">Pengaturan</span>
+    </a>
+    <a href="#" class="nav-item" onclick="return false">
+      <span class="nav-icon">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 3a1 1 0 00-1 1v12a1 1 0 102 0V4a1 1 0 00-1-1zm10.293 9.293a1 1 0 001.414 1.414l3-3a1 1 0 000-1.414l-3-3a1 1 0 10-1.414 1.414L14.586 9H7a1 1 0 100 2h7.586l-1.293 1.293z" clip-rule="evenodd"/></svg>
+      </span>
+      <span class="nav-label">Logout</span>
+    </a>
+  </nav>
+</aside>
+
+<!-- ═══════════════ MAIN CONTENT ═══════════════ -->
+<div class="main-wrap">
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="hamburger" id="hamburger" onclick="toggleSidebar()">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
+      </button>
+      <div class="search-wrap">
+        <svg class="search-ico" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"/></svg>
+        <input type="text" placeholder="Cari karyawan, cabang..." id="global-search" oninput="globalSearch(this.value)">
+      </div>
+    </div>
+    <div class="topbar-right">
+      <!-- Dataset Toggle -->
+      <div class="ds-toggle-wrap">
+        <button class="ds-pill messy active" id="btn-messy" onclick="switchMode('messy')">⚠ Messy</button>
+        <button class="ds-pill clean" id="btn-clean" onclick="switchMode('clean')">✓ Clean</button>
+      </div>
+      <!-- Notification -->
+      <div class="tb-icon-btn" style="position:relative">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"/></svg>
+        <span class="notif-dot">78</span>
+      </div>
+      <!-- User -->
+      <div class="tb-user">
+        <div class="tb-avatar">SR</div>
+        <div class="tb-user-info">
+          <span class="tb-user-name">Siti Rahayu</span>
+          <span class="tb-user-role">HR Manager</span>
+        </div>
+        <svg viewBox="0 0 20 20" fill="currentColor" style="width:14px;color:#94a3b8"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- PAGES -->
+  <main class="content">
+    <div id="pg-dashboard"></div>
+    <div id="pg-team" style="display:none"></div>
+    <div id="pg-review" style="display:none"></div>
+    <div id="pg-compare" style="display:none"></div>
+  </main>
+
+</div><!-- /main-wrap -->
+
+<!-- DETAIL OVERLAY -->
+<div class="overlay" id="overlay" onclick="closeOverlay(event)">
+  <div class="detail-panel" id="detail-panel">
+    <!-- content injected -->
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- Scripts -->
+<script src="data.js"></script>
+<script src="utils.js"></script>
+<script src="dashboard.js"></script>
+<script src="team.js"></script>
+<script src="review.js"></script>
+<script src="compare.js"></script>
+<script src="detail.js"></script>
+<script src="app.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+</body>
+</html>
