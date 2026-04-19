@@ -1,5 +1,8 @@
 # PM Case Study - Rakamin Workforce Intelligence Platform
 
+## 🌐 Live Demo
+👉 https://pm-casestudy-rakamin-mfahmigg.netlify.app/
+
 ## 📋 Project Overview
 
 Ini adalah case study untuk merancang **Workforce Intelligence Platform** – solusi yang mengubah data HR yang terfragmentasi dan tidak konsisten menjadi insight yang dapat digunakan untuk pengambilan keputusan strategis.
