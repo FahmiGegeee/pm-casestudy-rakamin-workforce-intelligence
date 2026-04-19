@@ -66,33 +66,6 @@ Project difokuskan pada pembangunan solusi awal (Proof of Concept) yang dapat me
 
 ---
 
-## 📁 Folder Structure
-
-```
-pm-casestudy-rakamin-workforce-intelligence/
-├── README.md                    # Dokumentasi project
-├── docs/                        # Dokumentasi lengkap
-│   ├── problem-statement.md     # Deskripsi masalah
-│   ├── data-strategy.md         # Strategi data
-│   ├── solution-design.md       # Desain solusi
-│   └── roadmap.md               # Roadmap 90 hari
-├── src/                         # Source code
-│   ├── components/              # Komponen UI
-│   ├── pages/                   # Halaman aplikasi
-│   ├── utils/                   # Utility functions
-│   └── assets/                  # Assets & styling
-├── data/                        # Data samples
-│   ├── raw/                     # Raw data
-│   ├── processed/               # Processed data
-│   └── insights/                # Generated insights
-├── models/                      # AI/ML models
-│   ├── skill-gap-model/
-│   └── recommendation-engine/
-└── tests/                       # Testing
-```
-
----
-
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -191,16 +164,6 @@ Project ini dikembangkan secara individu sebagai bagian dari **portfolio Product
 - Data-driven decision making
 - Product design & user experience
 - Technical collaboration & project management
-
----
-
-## 📚 Documentation
-
-Untuk informasi lebih detail, silakan lihat dokumentasi lengkap di folder `/docs`:
-- [Problem Statement](docs/problem-statement.md)
-- [Data Strategy](docs/data-strategy.md)
-- [Solution Design](docs/solution-design.md)
-- [90-Day Roadmap](docs/roadmap.md)
 
 ---
 
